@@ -1,0 +1,312 @@
+*{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+}
+/* headersection */
+header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 70px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 100px;
+        transition: 0.6s;
+        z-index: 3;
+}
+header .logo{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+        line-height: 60px;
+        padding: 0 100px;
+        cursor: pointer;
+        color: #fff;
+}
+header ul{
+        float: right;
+        margin-right:20px;
+        padding: 0 100px;
+
+}
+header ul li{
+        display: inline-block;
+        margin: 0 5px;
+        line-height: 60px;
+        list-style: none;
+        position: relative;
+}
+header ul li a{
+        font-size: 16px;
+        font-weight: 500;
+        padding: 7px 13px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+}
+header ul li a:hover{
+        font-weight: bold;
+        color: #000;
+}
+/* style sticky */
+header.sticky{
+        padding: 12px 100px;
+        background-color: #fff;
+        box-shadow: 2px 5px 7px rgba(0,0,0,0.2);
+}
+header.sticky ul li a{
+        color: #272727;
+        font-weight: 500;
+}
+header.sticky ul li a:hover{
+        font-weight: bolder;
+}
+header.sticky .logo{
+        color: #272727;
+}
+
+.banner-conatiner{
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: fixed url(/images/915671-bigthumbnail.jpg);
+      background-size: cover;
+      background-position: center;  
+}
+.banner{
+        width: 100%;
+        top: 60%;
+        position: absolute;
+        text-align: center;
+        /* transform: translate(-50%); */
+        color: #f8f8ff;
+}
+.banner h1{
+        font-size: 48px;
+        font-weight: 600;
+}
+.banner p{
+        margin: 20px auto;
+        line-height: 25px;
+
+}
+.btn{
+        width: 200px;
+        padding: 15px 0;
+        margin: 20px 10px;
+        background: transparent;
+        font-weight: bold;
+        text-align: center;
+        border: 3px solid #ff0233;
+        border-radius: 25px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+
+}
+.hover-effect{
+        border: 25px;
+        background: #ff0233;
+        height: 100%;
+        width: 0;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: 0.5s;
+
+}
+.btn:hover .hover-effect{
+        width: 100%;
+        
+}
+.btn:hover{
+        border: none;
+        background: #ff0233;
+        color: aqua;
+}
+/* about section */
+.about{
+        width: 100%;
+        padding: 50px 0;
+        background-color: #192930;
+        align-items: center;
+
+}
+.main{
+        max-width: 95%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px 100px;
+}
+.about-text h2{
+        color: #fff;
+        font-size: 30px;
+        font-weight: 100;
+        text-align: center;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+}
+.about-text p{
+        font-size: 16px;
+        line-height: 28px;
+        color: #e0ffff;
+        text-align: justify;
+        margin-bottom: 45px;
+
+
+}
+.about-text button{
+        background-color: #fff;
+        color: #000;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 13px 30px;
+        border-radius: 30px;
+        transition: .4s;
+        transform: translateY(-50%);
+
+        
+}
+.about-text button:hover{
+        background-color: grey;
+        color: #fff;
+        cursor: pointer;
+}
+          /* service section */
+.service{
+        min-height: 100vh;
+        width: 100%;
+        background: #fff;
+        padding: 20px 0;
+
+}  
+        
+.title h2{
+        width: 1130px;
+        font-size: 40px;
+        color: #272727;
+        text-align: center;
+        margin: 30px auto;
+}
+.box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 40px;
+}
+.card{
+        height: 390px;
+        width: 335px;
+        padding: 20px 35px;
+        border-radius: 20px;
+        margin: 35px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        border-bottom: 7px solid gray;
+        box-shadow: 0 10px 18px #ABB289;
+
+}
+.card i{
+        font-size: 40px;
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+        color: rgba(226, 7, 43, 0.623);
+}
+.card h5{
+        color: #272727;
+        font-size: 23px;
+        margin-bottom: 15px;
+
+}
+.paragraph p{
+        color: gray;
+        font-size: 14px;
+        line-height: 27px;
+        margin-bottom: 25px;
+        text-align: justify;
+}
+.buttons a{
+        background-color: rgb(224, 76, 145);
+        color: #fff;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: 200;
+        padding: 9px 22px ;
+        border-radius: 10px;
+        transition: .4s;
+
+}
+.buttons a:hover{
+        background-color: aqua;
+        color:black;
+        
+}
+
+/* footer section */
+footer{
+        position: relative;
+        width: 100%;
+        height: 300px;
+        background: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
+footer p:nth-child(1){
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 30px;
+      color: #fff;
+      margin-bottom: 20px;
+      font-weight: bold;
+}
+footer p:nth-child(2){
+     color: grey;
+     font-size: 17px;
+     width: 500px;
+     text-align: center;
+     line-height: 26px;
+}
+.social-icons{
+        display: flex;
+}
+.social-icons a{
+       width: 45px;
+       height: 45px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       border: 3px solid rgba(78, 78, 221, 0.788);
+       background: transparent;
+       border-radius: 50%;
+       margin: 22px 10px;
+       color: rgba(200, 200, 238, 0.63);
+       text-decoration: none;
+       font-size: 20px;
+}
+.social-icons a:hover{
+         transform: scale(1.3);
+         transition: .3s;
+}
+.end{
+        position: absolute;
+        color: #f8f8ff;
+        bottom: 35px;
+        font-size: 16px;
+        font-weight: 200;
+}
+        
+
+
+
+
